@@ -22,13 +22,13 @@
 				<li><a href="#">KS Logo</a></li>
 			</ul>
 			<ul class="nav navbar-nav" id="nav-center">
-				<li><a href="#">About Me</a></li>
-				<li><a href="#">Projects</a></li>
-				<li><a href="#">Interests</a></li>
-				<li><a href="#">Other Work</a></li>
+				<li class="nav-click" id="nav-about"><a href="#">About Me</a></li>
+				<li class="nav-click" id="nav-projects"><a href="#">Projects</a></li>
+				<li class="nav-click" id="nav-interests"><a href="#">Interests</a></li>
+				<li class="nav-click" id="nav-other"><a href="#">Other Work</a></li>
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
-				<li><a href="#">Contact Me</a></li>
+				<li class="nav-click"><a href="#">Contact Me</a></li>
 			</ul>
 		</div>
 	</nav>
@@ -38,6 +38,7 @@
 			<div class="col-sm-3 col-md-7"></div>
 			<div class="col-sm-6 col-md-5">
 				<h2>Project Name</h2>
+				<hr align="right">
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, accusantium officiis blanditiis dolorum sapiente hic iure, perferendis minus et laudantium beatae natus illo! Ad aliquam natus ducimus voluptate, fugiat quasi.</p>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, accusantium officiis blanditiis dolorum sapiente hic iure, perferendis minus et laudantium beatae natus illo! Ad aliquam natus ducimus voluptate, fugiat quasi.</p>
 				<a href="#">link to project</a>
@@ -46,19 +47,65 @@
 		</div>
 	</div>
 
-	<footer class="footer">
-		<div class="container">
-			<div class="row">
-				<p class="text-muted col-md-4" id="footer-name">Kyle Sandhage</p>
-				<ul class="nav navbar-nav navbar-right col-md-4" id="social-media">
-					<li><a href="#">linkedin</a></li>
-					<li><a href="#">twitter</a></li>
-					<li><a href="#">github</a></li>
-					<li><a href="#">g+</a></li>
-				</ul>
+	<div class="container" id="about-me-container">
+		<div class="jumbotron">
+			<h2>About Me</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam labore quibusdam hic. Quasi, placeat, neque! Optio ipsam repudiandae similique quasi a ex, natus voluptates sapiente quisquam ut magnam eius. Neque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde quae eaque, tempore amet quisquam iusto! Laboriosam nostrum veniam vel suscipit cumque nam numquam commodi error tempore. Voluptate, hic unde deleniti.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam labore quibusdam hic. Quasi, placeat, neque! Optio ipsam repudiandae similique quasi a ex, natus voluptates sapiente quisquam ut magnam eius. Neque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde quae eaque, tempore amet quisquam iusto! Laboriosam nostrum veniam vel suscipit cumque nam numquam commodi error tempore. Voluptate, hic unde deleniti.</p>
+		</div>
+	</div>
+
+	<div class="container" id="interests-container">
+		<div class="row">
+			<div class="container col-sm-6 col-md-3">
+				<h3>Coding</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero fugiat, consectetur maxime, corrupti quos libero iure doloremque sed ullam.</p>
+			</div>
+			<div class="container col-sm-6 col-md-3">
+				<h3>Photography</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero fugiat, consectetur maxime, corrupti quos libero iure doloremque sed ullam.</p>
+			</div>
+			<div class="container col-sm-6 col-md-3">
+				<h3>Cycling</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero fugiat, consectetur maxime, corrupti quos libero iure doloremque sed ullam.</p>
+			</div>
+			<div class="container col-sm-6 col-md-3">
+				<h3>Writing</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero fugiat, consectetur maxime, corrupti quos libero iure doloremque sed ullam.</p>
 			</div>
 		</div>
-	</footer>
+		<div class="row">
+			<div class="container col-sm-6 col-md-3">
+				<h3>Poetry</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero fugiat, consectetur maxime, corrupti quos libero iure doloremque sed ullam.</p>
+			</div>
+			<div class="container col-sm-6 col-md-3">
+				<h3>Aerial</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero fugiat, consectetur maxime, corrupti quos libero iure doloremque sed ullam.</p>
+			</div>
+			<div class="container col-sm-6 col-md-3">
+				<h3>Travel</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero fugiat, consectetur maxime, corrupti quos libero iure doloremque sed ullam.</p>
+			</div>
+			<div class="container col-sm-6 col-md-3">
+				<h3>Cooking</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero fugiat, consectetur maxime, corrupti quos libero iure doloremque sed ullam.</p>
+			</div>
+		</div>
+	</div>
 	
+	<div class="container" id="other-work-container"></div>
+
+	<div class="container" id="contact-container"></div>
+
+	<footer class="footer row">
+		<p class="text-muted col-md-4" id="footer-name">Kyle Sandhage</p>
+		<ul class="nav navbar-nav navbar-right" id="social-media">
+			<li><a href="#">linkedin</a></li>
+			<li><a href="#">twitter</a></li>
+			<li><a href="#">github</a></li>
+			<li><a href="#">g+</a></li>
+		</ul>
+	</footer>	
 </body>
 </html>

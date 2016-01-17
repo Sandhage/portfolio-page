@@ -9,9 +9,18 @@
 }
 
 
-/* Project/Cube/Body Content */
+/* Project Info */
+#project-detail-container .row {
+	margin-top: 60px;
+}
+
 #project-detail-container h2 {
 	margin-bottom: 25px;
+}
+
+#project-detail-container hr {
+	width: 90%;
+	margin-right: 10px;
 }
 
 #project-detail-container p {
@@ -21,8 +30,28 @@
 
 #project-detail-container a {
 	margin-left: 75%;
+	color: #FF0000;
 }
 
+
+/* About Me */
+#about-me-container {
+	display: none;
+}
+
+#about-me-container p {
+	font-size: 1.75rem;
+}
+
+/* Interests */
+#interests-container {
+	display: none;
+	margin-top: 30px;
+}
+
+#interests-container .row {
+	margin-bottom: 25px;
+}
 
 /* Footer */
 .footer {
@@ -37,9 +66,11 @@
 	font-size: 1.75rem;
 	letter-spacing: 10px;
 	margin-top: 15px;
+	margin-left: 25px;
 }
 
 #social-media {
 	font-size: 1.5rem;
 	letter-spacing: normal;
+	margin-right: 25px;
 }
