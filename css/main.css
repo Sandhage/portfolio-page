@@ -8,6 +8,7 @@ html, body {
 .nav {
 	font-size: 1.5rem;
 	letter-spacing: 2px;
+	background-color: #FFF;
 }
 
 #nav-center {
@@ -16,9 +17,10 @@ html, body {
 
 
 /* Project Info */
-#project-detail-container .row {
-	margin-top: 60px;
-}
+
+/*#project-detail-container .row {
+	margin-top: 25px;
+}*/
 
 #project-detail-container h2 {
 	margin-bottom: 25px;
@@ -57,7 +59,7 @@ html, body {
 }
 
 #interests-container .row {
-	margin-bottom: 45px;
+	margin-bottom: 25px;
 }
 
 /* Footer */
@@ -67,6 +69,7 @@ html, body {
 	width: 100%;
 	height: 60px;
 	border-top: 1px solid #e7e7e7;
+	background-color: #FFF;
 }
 
 #footer-name {

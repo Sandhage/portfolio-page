@@ -1,4 +1,4 @@
-var camera, scene, renderer;
+var spinBox, helper, camera, scene, renderer, controls;
 var mesh;
 
 $('document').ready(function() {
@@ -12,8 +12,9 @@ function init() {
 
 	scene = new THREE.Scene();
 
-	var material,
-		loader = new THREE.TextureLoader();
+	var material;
+
+	var loader = new THREE.TextureLoader();
 	loader.load(
 		// Function when resource is loaded
 		function(texture) {
@@ -33,6 +34,9 @@ function init() {
 	);
 
 	var geometry = new THREE.BoxGeometry(200, 200, 200);
+	geometry.computeBoundingSphere();
+
+	spinBox = geometry;
 
 	mesh = new THREE.Mesh(geometry, material);
 	scene.add(mesh);
@@ -47,6 +51,11 @@ function init() {
 	window.addEventListener('resize', onWindowResize, false);
 
 	//
+	var radius = spinBox.geometry.boundingSphere.radius;
+
+	controls = new THREE.OrbitControls( camera );
+	controls.target.set( 0, radius, 0 );
+	controls.update();
 
 	// renderer.setClearColorHex(0xFFFFFF, 1); -- out of date, breaks page
 }
