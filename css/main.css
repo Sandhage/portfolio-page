@@ -3,6 +3,10 @@ html, body {
 	height: 100%;
 }
 
+a:hover {
+	color: #333;
+}
+
 
 /* Nav Bar */
 .nav {
@@ -17,6 +21,9 @@ html, body {
 
 
 /* Project Info */
+#project-detail-container {
+	display: none;
+}
 
 /*#project-detail-container .row {
 	margin-top: 25px;
