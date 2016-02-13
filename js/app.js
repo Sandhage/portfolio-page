@@ -54,6 +54,7 @@ function topNavClick() {
 			$('#project-link').html("link to project");
 			// $('#project-link').prop("href", "http://sandhage.github.io/orbiter-3-calendar");
 			$('#project-link').prop("href", "#");
+			$('#project-img').prop("src", "assets/icon-calendar.svg")
 			$('#project-detail-container').show();
 		} else if ( $(this).is('#nav-about') ) {
 			$('#about-me-container').show();
