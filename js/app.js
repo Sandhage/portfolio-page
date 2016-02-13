@@ -29,6 +29,7 @@ function topNavClick() {
 			$('#description2').html(kaplow2);
 			$('#project-link').html("link to project");
 			$('#project-link').prop("href", "http://sandhage.github.io/kaplow-quiz/");
+			$('#project-img-container').css("padding-top", "50px");
 			$('#project-img').prop("src", "assets/icon-bomb.svg");
 			$('#project-detail-container').show();
 		} else if ( $(this).is('#nav-meadow') ) {
@@ -37,6 +38,7 @@ function topNavClick() {
 			$('#description2').html(meadow2);
 			$('#project-link').html("link to project");
 			$('#project-link').prop("href", "http://sandhage.github.io/a-calming-meadow/");
+			$('#project-img-container').css("padding-top", "30px");
 			$('#project-img').prop("src", "assets/icon-sun.svg");
 			$('#project-detail-container').show();
 		} else if ( $(this).is('#nav-shoplist') ) {
@@ -45,6 +47,7 @@ function topNavClick() {
 			$('#description2').html(list2);
 			$('#project-link').html("link to project");
 			$('#project-link').prop("href", "https://shopping-list-rails.herokuapp.com/");
+			$('#project-img-container').css("padding-top", "30px");
 			$('#project-img').prop("src", "assets/icon-basket.svg");
 			$('#project-detail-container').show();
 		} else if ( $(this).is('#nav-calendar') ) {
@@ -54,6 +57,7 @@ function topNavClick() {
 			$('#project-link').html("link to project");
 			// $('#project-link').prop("href", "http://sandhage.github.io/orbiter-3-calendar");
 			$('#project-link').prop("href", "#");
+			$('#project-img-container').css("padding-top", "30px");
 			$('#project-img').prop("src", "assets/icon-calendar.svg")
 			$('#project-detail-container').show();
 		} else if ( $(this).is('#nav-about') ) {
