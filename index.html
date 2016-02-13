@@ -62,7 +62,7 @@
 	<div class="container" id="about-me-container">
 		<div class="jumbotron">
 			<h2>About Me</h2>
-			<p>Hello! My name is Kyle Sandhage and I am a web developer. I really enjoy working up and down the stack: designing/wireframing pages; fleshing out the front-end with artisinal and hand-crafted HTML, CSS, and JavaScript; digging deep into the back end to create features and functionality... I love it all! I had my first introduction to coding while pursuing my bachelor's degree in Journalism at the University of Georgia.</p>
+			<p>Hello! My name is Kyle Sandhage and I am a web developer. I really enjoy working up and down the stack: designing/wireframing pages; fleshing out the front-end with custom HTML, CSS, and JavaScript; digging deep into the back end to create features and functionality... I love it all! I had my first introduction to coding while pursuing my bachelor's degree in Journalism at the University of Georgia.</p>
 			<p>Alongside my major courses, I was accepted into the New Media Institute (within the Grady College of Journalism) where I earned the New Media Certificate -- an achievement that showed that I knew my way around the front-end. After obtaining my degree, I spent a few years trying on a couple different hats (barista, baker, market intelligence consultant, freelance writer, so on and so forth) before coming back to coding. It was something that I had enjoyed from the beginning and finally decided to seriously pursue as a career. I've since enrolled in courses through Thinkful to sharpen my development skills.</p>
 		</div>
 	</div>
@@ -120,9 +120,13 @@
 					<input type="email" name="_replyto" id="contact-email">
 				</div>
 			</div>
-			    
+			 
+			<input type="hidden" name="_next" value="//sandhage.github.io/portfolio-page/" />
+
 			<h4 class="text-muted">Message</h4>
-		    <textarea rows="10" cols="70" id="contact-message"></textarea>
+		    <textarea rows="10" cols="70" name="message" id="contact-message"></textarea>
+		    
+		    <input type="text" name="_gotcha" style="display:none" />
 		    <input type="submit" value="Send" id="contact-submit">
 		</form>
 	</div>
