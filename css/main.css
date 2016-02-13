@@ -19,6 +19,9 @@ a:hover {
 	margin-left: 70px;
 }
 
+#nav-other {
+	display: none;
+}
 
 /* Project Info */
 #project-detail-container {
@@ -48,6 +51,14 @@ a:hover {
 	color: #FF0000;
 }
 
+#project-img-container {
+	padding-top: 50px;
+	padding-left: 75px;
+}
+
+#project-img {
+	width: 80%;
+}
 
 /* About Me */
 #about-me-container {
@@ -67,6 +78,42 @@ a:hover {
 
 #interests-container .row {
 	margin-bottom: 25px;
+}
+
+/* Contact Me */
+#contact-container {
+	display: none;
+	margin-right: auto;
+	margin-left: auto;
+	width: 40%;
+}
+
+#contact-container .row {
+	margin-bottom: 30px;
+}
+
+#contact-container .title-left {
+	float: left;
+}
+
+#contact-container .title-right {
+	float: right;
+}
+
+#contact-container .row input {
+	width: 100%;
+}
+
+#contact-message {
+	width: 100%;
+}
+
+#contact-submit {
+	margin-top: 15px;
+	border: 1px solid #999;
+	color: #777;
+	background-color: #FFF;
+	border-radius: 3px;
 }
 
 /* Footer */
