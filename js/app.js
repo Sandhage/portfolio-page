@@ -1,6 +1,16 @@
 $('document').ready(function() {
 	topNavClick();
+	openExternalWindow();
 });
+
+
+function openExternalWindow() {
+	$('.external-link').click(function(){
+  		$(this).prop("target", "_blank");
+	});
+
+	return false;
+}
 
 function topNavClick() {
 	$('.nav-click').click(function() {
@@ -66,8 +76,11 @@ function topNavClick() {
 			$('#interests-container').show();
 		} else if ( $(this).is('#nav-other') ) {
 			$('#other-work-container').show();
-		} else {
+		} else if ( $(this).is('#nav-contact') ) {
 			$('#contact-container').show();
+		} else {
+			hideAllContent();
+			$('.nav-click').removeClass("active");
 		}
 	});
 }

@@ -19,7 +19,7 @@
 	<nav class="navbar navbar-default navbar-static-top">
 		<div class="container-fluid">
 			<ul class="nav navbar-nav">
-				<li><a href="#">KS Logo</a></li>
+				<li class="nav-click" id="nav-logo"><a href="#"><img src="assets/KS-logo.png" id="logo-img"></a></li>
 			</ul>
 			<ul class="nav navbar-nav" id="nav-center">
 				<li class="nav-click" id="nav-about"><a href="#">About Me</a></li>
@@ -36,12 +36,10 @@
 				<li class="nav-click" id="nav-other"><a href="#">Other Work</a></li>
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
-				<li class="nav-click"><a href="#">Contact Me</a></li>
+				<li class="nav-click" id="nav-contact"><a href="#">Contact Me</a></li>
 			</ul>
 		</div>
 	</nav>
-
-
 
 	<div class="container" id="project-detail-container">
 		<div class="row">
@@ -51,7 +49,7 @@
 				<hr align="right">
 				<p id="description1"></p>
 				<p id="description2"></p>
-				<a href="#" id="project-link"></a>
+				<a href="#" class="external-link" id="project-link"></a>
 			</div>
 			<div class="col-sm-3"></div>
 		</div>
@@ -130,12 +128,12 @@
 
 	<footer class="footer">
 		<ul class="nav navbar-nav" id="footer-name">
-			<li class="text-muted">Kyle Sandhage</li>
+			<li class="text-muted">Kyle Lewis Sandhage</li>
 		</ul>
 		<ul class="nav navbar-nav navbar-right" id="social-media">
-			<li><a href="https://www.linkedin.com/in/kyle-sandhage-b5439367" class="text-muted"><img src="assets/icon-linkedin.svg"></a></li>
-			<li><a href="https://twitter.com/SyzygyGerund" class="text-muted"><img src="assets/icon-twitter.svg"></a></li>
-			<li><a href="https://github.com/Sandhage" class="text-muted"><img src="assets/icon-github.svg"></a></li>
+			<li><a href="https://www.linkedin.com/in/kyle-sandhage-b5439367" class="text-muted external-link"><img src="assets/icon-linkedin.svg"></a></li>
+			<li><a href="https://twitter.com/SyzygyGerund" class="text-muted external-link"><img src="assets/icon-twitter.svg"></a></li>
+			<li><a href="https://github.com/Sandhage" class="text-muted external-link"><img src="assets/icon-github.svg"></a></li>
 		</ul>
 	</footer>	
 </body>

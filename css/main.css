@@ -15,6 +15,14 @@ a:hover {
 	background-color: #FFF;
 }
 
+.nav li {
+	background-color: #f8f8f8;
+}
+
+#logo-img {
+	height: 20px;
+}
+
 #nav-center {
 	margin-left: 70px;
 }
