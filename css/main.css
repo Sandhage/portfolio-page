@@ -7,10 +7,19 @@ a:hover {
 	color: #333;
 }
 
+
 /* Nav Bar */
 .nav {
 	font-size: 1.5rem;
 	letter-spacing: 2px;
+	background-color: #FFF;
+}
+
+.navbar {
+	background-image: none;
+}
+
+.navbar-default {
 	background-color: #FFF;
 }
 
@@ -101,6 +110,7 @@ a:hover {
 	margin-bottom: 25px;
 }
 
+
 /* Contact Me */
 #contact-container {
 	display: none;
@@ -137,6 +147,7 @@ a:hover {
 	border-radius: 3px;
 }
 
+
 /* Footer */
 .footer {
 	position: absolute;
@@ -158,4 +169,31 @@ a:hover {
 	font-size: 1.5rem;
 	letter-spacing: normal;
 	margin-right: 25px;
+}
+
+
+/* Media Queries */
+@media screen (max-width: 750px) {
+
+}
+
+@media screen (min-width: 1500px ) {
+	/* Home */
+	#home-container h2 {
+		margin-top: 250px;
+		margin-left: 13%;
+	}
+
+	#home-container p {
+		font-size: 2rem;
+		margin-top: 45px;
+		margin-left: 30%;
+	}
+
+	#home-container #home-p-two {
+		font-size: 1rem;
+		margin-left: 56%;
+	}
+
+
 }
