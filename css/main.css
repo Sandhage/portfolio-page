@@ -215,8 +215,7 @@ a:hover {
 
 	/* About Me */
 	#about-me-container {
-		display: none;
-		margin-top: 45px;
+		margin-top: 150px;
 	}
 
 	#about-me-container p {
@@ -233,6 +232,6 @@ a:hover {
 	}
 
 	#interests-container .row div {
-		margin-left: 45px;
+		margin-left: 25px;
 	}
 }
