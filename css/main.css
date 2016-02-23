@@ -173,11 +173,11 @@ a:hover {
 
 
 /* Media Queries */
-@media screen (max-width: 750px) {
+@media screen and (max-width: 750px) {
 
 }
 
-@media screen (min-width: 1900px ) {
+@media screen and (min-width: 1300px) {
 	/* Home */
 	#home-container h2 {
 		margin-top: 250px;
@@ -185,13 +185,10 @@ a:hover {
 	}
 
 	#home-container p {
-		font-size: 2rem;
-		margin-top: 45px;
 		margin-left: 30%;
 	}
 
 	#home-container #home-p-two {
-		font-size: 1rem;
 		margin-left: 56%;
 	}
 
