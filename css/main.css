@@ -7,16 +7,11 @@ a:hover {
 	color: #333;
 }
 
-
 /* Nav Bar */
 .nav {
 	font-size: 1.5rem;
 	letter-spacing: 2px;
 	background-color: #FFF;
-}
-
-.nav li {
-	background-color: #f8f8f8;
 }
 
 #logo-img {
@@ -30,6 +25,24 @@ a:hover {
 #nav-other {
 	display: none;
 }
+
+/* Home */
+#home-container h2 {
+	margin-top: 130px;
+	margin-left: 23%;
+}
+
+#home-container p {
+	font-size: 2rem;
+	margin-top: 45px;
+	margin-left: 40%;
+}
+
+#home-container #home-p-two {
+	font-size: 1rem;
+	margin-left: 66%;
+}
+
 
 /* Project Info */
 #project-detail-container {

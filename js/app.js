@@ -1,6 +1,7 @@
 $('document').ready(function() {
 	topNavClick();
 	openExternalWindow();
+	// welcomeUser();
 });
 
 
@@ -81,14 +82,21 @@ function topNavClick() {
 		} else {
 			hideAllContent();
 			$('.nav-click').removeClass("active");
+			$('#home-container').show();		
 		}
 	});
 }
 
 function hideAllContent() {
+	$('#home-container').hide();
 	$('#project-detail-container').hide();
 	$('#about-me-container').hide();
 	$('#interests-container').hide();
 	$('#other-work-container').hide();
 	$('#contact-container').hide();
 }
+
+// function welcomeUser() {
+// 	console.log("You are in a dark room.");
+// 	console.log("What do you do?");
+// }
