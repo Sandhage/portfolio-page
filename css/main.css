@@ -213,5 +213,12 @@ a:hover {
 		padding-left: 75px;
 	}
 
+	/* Interests */
+	#interests-container {
+		margin-top: 175px;
+	}
 
+	#interests-container .row {
+		margin-bottom: 50px;
+	}
 }
