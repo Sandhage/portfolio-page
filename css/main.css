@@ -204,13 +204,23 @@ a:hover {
 	}
 
 	#project-text-container {
-		margin-top: 250px;
+		margin-top: 200px;
 	}
 
 	#project-img-container {
-		margin-top: 250px;
+		margin-top: 200px;
 		padding-top: 50px;
 		padding-left: 75px;
+	}
+
+	/* About Me */
+	#about-me-container {
+		display: none;
+		margin-top: 45px;
+	}
+
+	#about-me-container p {
+		font-size: 1.75rem;
 	}
 
 	/* Interests */
@@ -220,5 +230,9 @@ a:hover {
 
 	#interests-container .row {
 		margin-bottom: 50px;
+	}
+
+	#interests-container .row div {
+		margin-left: 45px;
 	}
 }
