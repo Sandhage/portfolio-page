@@ -193,5 +193,25 @@ a:hover {
 		margin-left: 66%;
 	}
 
+	/* Project Container */
+	#project-detail-container h2 {
+		margin-bottom: 50px;
+	}
+
+	#project-detail-container p {
+		margin-left: 120px;
+		margin-bottom: 30px;
+	}
+
+	#project-text-container {
+		margin-top: 250px;
+	}
+
+	#project-img-container {
+		margin-top: 250px;
+		padding-top: 50px;
+		padding-left: 75px;
+	}
+
 
 }
