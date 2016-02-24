@@ -21,7 +21,7 @@ function topNavClick() {
 		}
 
 		hideAllContent();
-
+		event.preventDefault();
 		// Project Descriptions
 		var kaplow1   = "I challenged myself to learn vanilla JavaScript with this project. I had originally started off learning jQuery, but I was far too curious about what was going on behind the scenes and took this as an opportunity to really learn some basic javascript. After many nights struggling over variables, writing random string and number generators, and typing 'document.getElementByID...' far too many times, I made Kaplow Quiz.",
 			kaplow2   = "Kaplow Quiz was inspired by the game Keep Talking and Nobody Explodes! I had looked through a few quiz apps that others had made and noticed that they were often quizes about niche topics -- if you didn't know much about it, you were bound to fail. So I decided to try and even the playing field for all involved: the quiz randomly generates the answers to the questions and shows them to the player for four seconds. They then have 24 seconds to answer all of these questions.",
