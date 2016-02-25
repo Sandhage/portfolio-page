@@ -40,6 +40,7 @@ function topNavClick() {
 			$('#description2').html(kaplow2);
 			$('#project-link').html("link to project");
 			$('#project-link').prop("href", "http://sandhage.github.io/kaplow-quiz/");
+			$('#project-link').show(); // remove when Orbiter 3 is finished
 			$('#project-img-container').css("padding-top", "50px");
 			$('#project-img').prop("src", "assets/icon-bomb.svg");
 			$('#project-detail-container').show();
@@ -49,6 +50,7 @@ function topNavClick() {
 			$('#description2').html(meadow2);
 			$('#project-link').html("link to project");
 			$('#project-link').prop("href", "http://sandhage.github.io/a-calming-meadow/");
+			$('#project-link').show(); // remove when Orbiter 3 is finished
 			$('#project-img-container').css("padding-top", "30px");
 			$('#project-img').prop("src", "assets/icon-sun.svg");
 			$('#project-detail-container').show();
@@ -60,6 +62,7 @@ function topNavClick() {
 			$('#project-link').prop("href", "https://shopping-list-rails.herokuapp.com/");
 			$('#project-img-container').css("padding-top", "30px");
 			$('#project-img').prop("src", "assets/icon-basket.svg");
+			$('#project-link').show(); // remove when Orbiter 3 is finished
 			$('#project-detail-container').show();
 		} else if ( $(this).is('#nav-calendar') ) {
 			$('#project-title').html("Orbiter 3 Donation Calendar");
@@ -67,11 +70,11 @@ function topNavClick() {
 			$('#description2').html(calendar2);
 			$('#project-link').html("link to project");
 			// $('#project-link').prop("href", "http://sandhage.github.io/orbiter-3-calendar");
-			$('#project-link').prop("href", "#");
+			$('#project-link').hide();
 			$('#project-img-container').css("padding-top", "30px");
 			$('#project-img').prop("src", "assets/icon-calendar.svg")
 			$('#project-detail-container').show();
-		} else if ( $(this).is('#nav-about') ) {
+		} else if ( $(this).is('#nav-about') ) {		
 			$('#about-me-container').show();
 		} else if ( $(this).is('#nav-interests') ) {
 			$('#interests-container').show();
