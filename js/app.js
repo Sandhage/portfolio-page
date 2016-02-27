@@ -2,7 +2,20 @@ $('document').ready(function() {
 	topNavClick();
 	openExternalWindow();
 	// welcomeUser();
+
+	var slideout = new Slideout({
+		'panel': document.getElementById('panel'),
+		'menu': document.getElementById('menu'),
+		'padding': 256,
+		'tolerance': 70
+	});
+
+	$('.js-slideout-toggle').click(function() {
+		slideout.toggle();
+	});
+
 });
+
 
 
 function openExternalWindow() {
@@ -34,7 +47,7 @@ function topNavClick() {
 			// calendar1 = "Orbiter 3 is a theater production company in Philadelphia; one of the key members is a friend of mine who knew I love web development and they were looking to create a calendar app for their fundraising project -- a 365 day project where they try to get a sponser for each day to donate $3.65, $36.50, or $365.00. They wanted the ability for users to log in and claim a specific day to donate.",
 			// calendar2 = "One of the big challenges was that they used Squarespace to create their website. The design was great, but as a service Squarespace doesn't play well with 3rd party features. To get around this problem, I cloned the design as best I could on my own and they were able to place the app under a subdomain (calendar.orbiter3.com), while hosting it through Heroku.";
 
-		if ( $(this).is('#nav-kaplow') ) {
+		if ( $(this).is('#nav-kaplow') || $(this).is('#nav-kaplow-mobile') ) {
 			$('#project-title').html("Kaplow Quiz");
 			$('#description1').html(kaplow1);
 			$('#description2').html(kaplow2);
@@ -44,7 +57,7 @@ function topNavClick() {
 			$('#project-img-container').css("padding-top", "50px");
 			$('#project-img').prop("src", "assets/icon-bomb.svg");
 			$('#project-detail-container').show();
-		} else if ( $(this).is('#nav-meadow') ) {
+		} else if ( $(this).is('#nav-meadow') || $(this).is('#nav-meadow-mobile') ) {
 			$('#project-title').html("A Calming Meadow");
 			$('#description1').html(meadow1);
 			$('#description2').html(meadow2);
@@ -54,7 +67,7 @@ function topNavClick() {
 			$('#project-img-container').css("padding-top", "30px");
 			$('#project-img').prop("src", "assets/icon-sun.svg");
 			$('#project-detail-container').show();
-		} else if ( $(this).is('#nav-shoplist') ) {
+		} else if ( $(this).is('#nav-shoplist') || $(this).is('#nav-shoplist-mobile') ) {
 			$('#project-title').html("Shopping List App");
 			$('#description1').html(list1);
 			$('#description2').html(list2);
@@ -64,7 +77,7 @@ function topNavClick() {
 			$('#project-img').prop("src", "assets/icon-basket.svg");
 			$('#project-link').show(); // remove when Orbiter 3 is finished
 			$('#project-detail-container').show();
-		} else if ( $(this).is('#nav-calendar') ) {
+		} else if ( $(this).is('#nav-calendar') || $(this).is('#nav-calendar-mobile') ) {
 			$('#project-title').html("Orbiter 3 Donation Calendar");
 			$('#description1').html(calendar1);
 			$('#description2').html(calendar2);
@@ -74,13 +87,11 @@ function topNavClick() {
 			$('#project-img-container').css("padding-top", "30px");
 			$('#project-img').prop("src", "assets/icon-calendar.svg")
 			$('#project-detail-container').show();
-		} else if ( $(this).is('#nav-about') ) {		
+		} else if ( $(this).is('#nav-about') || $(this).is('#nav-about-mobile') ) {		
 			$('#about-me-container').show();
-		} else if ( $(this).is('#nav-interests') ) {
+		} else if ( $(this).is('#nav-interests') || $(this).is('#nav-interests-mobile') ) {
 			$('#interests-container').show();
-		} else if ( $(this).is('#nav-other') ) {
-			$('#other-work-container').show();
-		} else if ( $(this).is('#nav-contact') ) {
+		} else if ( $(this).is('#nav-contact') || $(this).is('#nav-contact-mobile') ) {
 			$('#contact-container').show();
 		} else {
 			hideAllContent();
